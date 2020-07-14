@@ -1,1 +1,0 @@
-# joaquinvaldez-ne.github.io
