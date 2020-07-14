@@ -17,6 +17,16 @@ h3{ font-size: 32px; }
 h4{ font-size: 26px; }
 h5{ font-size: 21px; }
 h6{ font-size: 16px; }
+
+.h1{ font-size: 47px; }
+.h2{ font-size: 41px; }
+.h3{ font-size: 32px; }
+.h4{ font-size: 26px; }
+.h5{ font-size: 21px; }
+.h6{ font-size: 16px; }
+
+
+
 .text-black {
     color: #333; 
 }
@@ -453,17 +463,22 @@ hr {
     transform: translatex(-50%);
 }
 
-.searchstick {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 565px;
+.nav-item {
+    padding-left: 40px;
+}
+
+.shopcart {
+    width: 75px;
 }
 
 div.sticky {
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
+  padding-top: 20px;    
   top: 70px;
+  width: 100%;
   z-index: 999;
+  background-color: #e9ecef;
 }
 
 .jumbotron {
@@ -475,6 +490,14 @@ div.sticky {
 
 .item {
 	width: 100%;	
+}
+
+.carousel {
+    margin-top: 142px;
+}
+
+.ip {
+    margin-top: 142px;
 }
 
 #testimonialimg {
@@ -489,3 +512,251 @@ div.sticky {
 	padding: 10px;
 }
 
+#addtlProdImg {
+	width: 100px;
+	height: 100px;
+}
+
+.prodInfoBkgnd {
+    background-color: #daf2fa;
+}
+
+
+
+
+
+
+
+
+
+/*********************/
+/** From Gut Reboot **/
+/*********************/
+
+.storebody {
+    position: relative;
+    background: url("../../assets/images/bkgnd-store-1.jpg") no-repeat center top;
+    background-size: cover;
+    padding: 95px 0px 0px 0px;
+    z-index: 999;
+}
+
+.essentialsProductImage {
+    /*height: 600px;
+    width: auto;*/
+    border: solid 0px orange;
+}
+
+.drkblue {
+    color: #0c364c !important; 
+    font-weight: bold;
+}
+
+.text-primary-ltgreen {
+    color: #8dc63f;
+    /*text-shadow: 1px 1px 2px #333333;*/
+}
+.price-ltgreen {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #8dc63f;
+}
+
+.clear{
+    clear: both;
+}
+
+.txtSave {
+    font-size: 60px;
+    font-family: "Lobster";
+    font-weight: normal;
+    color: #8dc63f;
+    letter-spacing: 3px;
+    text-transform: none;
+    padding-bottom: 0px;
+}
+
+.txtEveryBox {
+    font-size: 40px;
+    color: #0c364c;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 10px;
+}
+
+section.product-details .price .current {
+  font-size: 30px;
+}
+
+.txtWithSubscription {
+    font-size: 20px;
+    color: #0c364c;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -5px;
+    padding: 0px 0px 20px 0px;
+}
+
+.riskfree {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8dc63f;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.guarantee {
+    font-size: 20px;
+    color: #0c364c;
+    font-weight: 700;
+}
+.itworks {
+    color: #0c364c;
+    padding: 20px 0px 50px 0px;
+}
+
+.owl-thumbs {
+    padding-bottom: 20%;
+}
+
+
+.quantity .inc-btn {
+    margin-left: 10px;
+}
+.quantity .dec-btn {
+    margin-right: 10px;
+}
+
+.list-group-itemx {
+  display: inline;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.background-none {
+	background: none;
+}
+
+
+/********************************************************/
+/***************** Thank You page ***********************/
+/********************************************************/
+
+.thankYouBody {
+    position: relative;
+    background: url("../../assets/images/bkgnd-thankyou.jpg") no-repeat center top;
+    background-size: cover;
+    height: 1500px;
+    padding: 100px 0px 0px 0px;
+    z-index: 999;
+}
+
+.txtThankYou {
+    font-size: 60px;
+    font-family: "Lobster";
+    font-weight: normal;
+    color: #0c364c;
+    letter-spacing: 3px;
+    text-transform: none;
+    padding: 20px 0px 0px 0px;
+}
+
+.confirm {
+    padding: 0px 0px 50px 0px;
+}
+
+.nav-tabs{
+	border-bottom: none;
+}
+.nav-item {
+	border-bottom: 1px solid #fff;
+	margin-top: 0px;
+}
+.nav-link {
+	border-bottom:  0px solid #fff;
+}
+.nav-link a {
+	border:  1px solid #fff;
+}
+.border-none {
+	border: 0px;
+}
+.display-none {
+	display: none;
+}
+
+.h3 {
+    line-height: 40px;
+}
+
+.pad {
+    padding: 0px 10% 0px 10%;
+}
+
+.phone {
+    position: relative;
+    top: -50px;
+    left: -15px;
+    width: 450px;
+    margin-right: 0%;
+    z-index: 0;  
+}
+
+.seeYouThere {
+    position: relative;
+    padding: 0px 50px 0px 50px;
+    z-index: 999;
+    
+}
+
+.water {
+    position: relative;
+    top: -100px;
+    right: 341px;
+    width: 800px;
+    z-index: 0;
+}
+
+.joingroupbtn {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    height: 166px;
+    margin: auto;
+}
+
+    .joingroupbtn .joingroupbtn-top {
+        width: 300px;
+        height: 166px;
+        display: none;
+        position: absolute;
+        z-index: 99;
+}
+    .joingroupbtn:hover .joingroupbtn-top {
+        position: relative;
+        width: 300px;
+        height: 166px;
+        display: inline-block;
+}
+    
+   .joingroupbtn:hover .joingroupbtn-btm {
+        display: none;
+}
+
+.nelogoftr {
+    position: relative;
+    top: -130px;
+    width: 300px;
+}
