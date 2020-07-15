@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="https://mygutreboot.com/assets/css/custom-fonticons.css">
 
     <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+    <!--<link rel="stylesheet" href="assets/css/docs.theme.min.css">-->
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
 
@@ -33,12 +33,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="img/logo-1.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +74,9 @@
                         <a class="nav-link" href="#">Log In</a>
                     </li>
                     <li class="nav-item shopcart">
-                        <a href="#" id="cart" data-toggle="modal" data-target="#cartModal"><img src="img/shopping-cart.png"></a>
+                        <a href="#" id="cart" data-toggle="modal" data-target="#cartModal">
+                            <img src="img/shopping-cart.png" class="img-fluid" alt="shopping cart" />
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -84,10 +84,10 @@
     </nav>
     <div class="sticky">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 pl-5 pr-5">
                 <form>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Product Search" aria-label="Product Search" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="Product Search" aria-label="Product Search" aria-describedby="basic-addon2" />
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
                         </div>
@@ -96,12 +96,12 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row ip">
-            <div class="col-5">
+    <div class="container ip">
+        <div class="row text-center">
+            <div class="col-6">
                 <div class="row">
                     <div class="col-md-12">
-                    <p><img src="img/Energize.png" class="img-fluid" alt="energize"></p>
+                        <p><img src="img/Energize.png" class="img-fluid" alt="energize"></p>
                     </div>
                 </div>
                 <div class="row">
@@ -136,10 +136,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-6">
                 <div class="row">
-                    <div class="col-md-12">
-                        <span class="h1 text-primary">Energize</span><br>
+                    <div class="col-md-12 text-left">
+                        <span class="h1 text-primary">Energize</span>
+                        <p/>
                         <span class="h3 text-primary font-italic">Natual Cellular Energy</span>
                     </div>
                 </div>
@@ -158,47 +159,44 @@
                         <p>
                             <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                         </p>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card my-3 text-primary border border-primary" style="width: 16rem;">
-                                    <div class="card-body">
-                                        <p><span class="h4 card-title text-primary">Subscribe & Save!</span></p>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card my-3 text-primary" style="width: 16rem;">
-                                    <div class="card-body">
-                                        <p><span class="h5 card-title text-secondary">One Time Purchase</span></p>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card my-3 text-primary border border-primary" style="width: 16rem;">
+                            <div class="card-body">
+                                <p><span class="h4 card-title text-primary">Subscribe & Save!</span></p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="d-flex justify-content-lg-start">
-                                    <div class="mx-auto justify-content-center">
-                                        <div class="quantity d-flex">
-                                            <div class="dec-btn bg-primary border-primary text-white" onclick="disableButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_decrease'});">-</div>
-                                            <input type="text" id="qty" name="qty" value="0" class="quantity-no">
-                                            <div class="inc-btn bg-primary border-primary text-white" onclick="activateButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_increase'})">+</div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card my-3 text-primary" style="width: 16rem;">
+                            <div class="card-body">
+                                <p><span class="h5 card-title text-secondary">One Time Purchase</span></p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-lg-start">
+                            <div class="mx-auto justify-content-center">
+                                <div class="quantity d-flex">
+                                    <div class="dec-btn bg-primary border-primary text-white" onclick="disableButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_decrease'});">-</div>
+                                    <input type="text" id="qty" name="qty" value="0" class="quantity-no">
+                                    <div class="inc-btn bg-primary border-primary text-white" onclick="activateButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_increase'})">+</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 my-3">
-                    <img src="img/certs.png">
-                </div>
-            </div>
         </div>
     </div>
+    <div class="row">&nbsp;</div>
+
     <div class="prodInfoBkgnd py-3">
         <div class="container-lg">
             <div class="row">
@@ -240,16 +238,16 @@
                         <span class="h2">What People Are Saying...</span>
                     </p>
                     <p>
-                        <i>I have been on the Essentials program since 1992. I love the benefits, so I've kept on the program. I never really understood why this program was so helpful, but now with all they new information about the importance of the gut microbiome I am realizing why the Essentials program has been so effective.</i><br />
-                        - Charles Leslie
+                        <i>I have been on the Essentials program since 1992. I love the benefits, so I've kept on the program. I never really understood why this program was so helpful, but now with all they new information about the importance of the gut microbiome I am realizing why the Essentials program has been so effective.</i>
+                        <br /> - Charles Leslie
                     </p>
                     <p>
-                        <i>I have depended on the core essential products in these packets for decades. It is the first product I purchase each month and the first thing I eat every morning. I have better health now in my 60s than I did in my 30s!</i><br />
-                        - Barbara Swanson
+                        <i>I have depended on the core essential products in these packets for decades. It is the first product I purchase each month and the first thing I eat every morning. I have better health now in my 60s than I did in my 30s!</i>
+                        <br /> - Barbara Swanson
                     </p>
                     <p>
-                        <i>Essentials daily packs are so easy to use and really works. After adding Essentials into my daily routine, I have noticed a positive change in the quality of my skin, energy, and gut health!</i><br />
-                        - Kelly S.
+                        <i>Essentials daily packs are so easy to use and really works. After adding Essentials into my daily routine, I have noticed a positive change in the quality of my skin, energy, and gut health!</i>
+                        <br /> - Kelly S.
                     </p>
                 </div>
             </div>
@@ -279,99 +277,116 @@
             </div>
         </div>
     </div>
-    <footer id="footer">
+    <footer class="container-fluid" id="footer">
         <div class="row">
-            <div class="col-md-3">
-                <div class="newsletter">
-                    <h4>
-                        Important Links
-                    </h4>
-                    <ul class="contact">
-                        <li><a href="#" class="text-muted">Privacy Policy</a></li>
-                        <li><a href="#" class="text-muted">Terms And Conditions</a></li>
-                        <li><a href="#" class="text-muted">Returns Policy</a></li>
-                        <li><a href="https://www.dsa.org/consumerprotection/code-of-ethics" target="_blank" class="text-muted">DSA Code Of Ethics</a></li>
-                    </ul>
-                    <p>&nbsp;</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="https://www.dsa.org/" target="_blank"> <img src="img/DSA-logo.png" alt="DSA" class="img img-responsive" /></a>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="newsletter">
+                            <h4>
+                                Important Links
+                            </h4>
+                            <ul class="contact">
+                                <li><a href="#" class="text-muted">Privacy Policy</a></li>
+                                <li><a href="#" class="text-muted">Terms And Conditions</a></li>
+                                <li><a href="#" class="text-muted">Returns Policy</a></li>
+                                <li><a href="https://www.dsa.org/consumerprotection/code-of-ethics" target="_blank" class="text-muted">DSA Code Of Ethics</a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-6">
-                            <a href="https://dsef.org/what-we-do/ethics-initiative/" target="_blank"> <img src="img/DSEF-logo.png" alt="DSEF" class="img img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>&nbsp;</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="https://www.dsa.org/" target="_blank"> <img src="img/DSA-logo.png" alt="DSA" class="img img-responsive" /></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://dsef.org/what-we-do/ethics-initiative/" target="_blank"> <img src="img/DSEF-logo.png" alt="DSEF" class="img img-responsive" /></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-details">
+                            <p>
+                                <img src="img/ne_logo-horizontal-white.png" alt="New Earth" class="img-fluid" width="75%" />
+                            </p>
+
+
+                            <ul class="contact">
+                                <li>
+                                    <p class="text-gray">
+                                        <i class="fa fa-map-marker"></i><strong>Address:</strong> P.O. Box 609, Klamath Falls, Oregon 97601
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text-gray">
+                                        <i class="fa fa-phone"></i><strong>Phone:</strong> +1-800-800-1300
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text-gray">
+                                        <i class="fa fa-envelope"></i>
+                                        <a href="mailto:support@newearthsupport.com" class="text-gray">
+                                            <strong>Email Us</strong>
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="contact-details">
-                    <p>
-                        <img src="img/ne_logo-horizontal-white.png" alt="New Earth" class="img img-responsive" />
-                    </p>
-
-
-                    <ul class="contact">
-                        <li>
-                            <p class="text-gray">
-                                <i class="fa fa-map-marker"></i><strong>Address:</strong>
-                                P.O. Box 609, Klamath Falls, Oregon 97601
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-gray">
-                                <i class="fa fa-phone"></i><strong>Phone:</strong>
-                                +1-800-800-1300
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-gray">
-                                <i class="fa fa-envelope"></i> <a href="mailto:support@newearthsupport.com" class="text-gray">
-                                    <strong>Email Us</strong>
-                                </a>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h4>
-                    Follow Us
-                </h4>
-                <div class="social-icons">
-                    <ul>
-                        <li class="social-twitter tooltips" data-original-title="Twitter" data-placement="bottom"><a target="_blank" href="https://twitter.com/NewEarthCo">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <ul>
+                                <li class="social-twitter tooltips" data-original-title="Twitter" data-placement="bottom"><a target="_blank" href="https://twitter.com/NewEarthCo">
                                 Twitter </a></li>
-                        <li class="social-facebook tooltips" data-original-title="Facebook" data-placement="bottom">
-                            <a target="_blank" href="https://www.facebook.com/NewEarthCo">
+                                <li class="social-facebook tooltips" data-original-title="Facebook" data-placement="bottom">
+                                    <a target="_blank" href="https://www.facebook.com/NewEarthCo">
                                 Facebook </a>
-                        </li>
-                        <li class="social-instagram tooltips" data-original-title="Instagram" data-placement="bottom">
-                            <a target="_blank" href="https://www.instagram.com/newearthco/"> Instagram </a>
-                        </li>
-                        <li class="social-pinterest tooltips" data-original-title="Pinterest" data-placement="bottom">
-                            <a target="_blank" href="https://www.pinterest.com/newearthco"> Pinterest </a>
-                        </li>
-                        <li class="social-google tooltips" data-original-title="Google" data-placement="bottom"><a target="_blank" href="https://plus.google.com/u/0/+NewEarthCompany">
+                                </li>
+                                <li class="social-instagram tooltips" data-original-title="Instagram" data-placement="bottom">
+                                    <a target="_blank" href="https://www.instagram.com/newearthco/"> Instagram </a>
+                                </li>
+                                <li class="social-pinterest tooltips" data-original-title="Pinterest" data-placement="bottom">
+                                    <a target="_blank" href="https://www.pinterest.com/newearthco"> Pinterest </a>
+                                </li>
+                                <li class="social-google tooltips" data-original-title="Google" data-placement="bottom"><a target="_blank" href="https://plus.google.com/u/0/+NewEarthCompany">
                                 Google+ </a></li>
-                    </ul>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        <li class="social-linkedin tooltips" data-original-title="LinkedIn" data-placement="bottom">
-                            <a target="_blank" href="https://www.linkedin.com/in/newearthco"> LinkedIn </a>
-                        </li>
-                        <li class="social-youtube tooltips" data-original-title="YouTube" data-placement="bottom"><a target="_blank" href="https://www.youtube.com/user/NewEarthCo"> YouTube </a>
-                        </li>
-                        <li class="social-rss tooltips" data-original-title="RSS" data-placement="bottom"><a target="_blank" href="https://blog.newearth.com"> RSS </a></li>
-                    </ul>
+                            </ul>
+                        </div>
+                        <div class="social-icons">
+                            <ul>
+                                <li class="social-linkedin tooltips" data-original-title="LinkedIn" data-placement="bottom">
+                                    <a target="_blank" href="https://www.linkedin.com/in/newearthco"> LinkedIn </a>
+                                </li>
+                                <li class="social-youtube tooltips" data-original-title="YouTube" data-placement="bottom"><a target="_blank" href="https://www.youtube.com/user/NewEarthCo"> YouTube </a>
+                                </li>
+                                <li class="social-rss tooltips" data-original-title="RSS" data-placement="bottom"><a target="_blank" href="https://blog.newearth.com"> RSS </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
             <div class="row">
-                <div class="col-md-12">
-                    <p>&copy; New Earth Life Sciences. All Right Reserved
-                    </p>
+                <div class="col-12">
+                    <div class="footer-copyrightx">
+                        <div class="row">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-white text-small">
+                                    &nbsp;&nbsp;&nbsp;&copy; New Earth Life Sciences. All Right Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -468,8 +483,7 @@
                 }
             })
         });
+
     </script>
-
 </body>
-
 </html>
