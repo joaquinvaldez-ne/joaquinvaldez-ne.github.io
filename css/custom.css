@@ -497,7 +497,7 @@ div.sticky {
 }
 
 .ip {
-    margin-top: 162px;
+    margin-top: 200px;
 }
 
 #testimonialimg {
@@ -521,7 +521,9 @@ div.sticky {
     background-color: #daf2fa;
 }
 
-
+.filter {
+    background-color: #e9ecef;
+}
 
 
 
@@ -1119,6 +1121,11 @@ a.cartlink { cursor: pointer; }
     left: 15%;
     right: auto;
     }
+
+.modal-open{
+  padding-right: 0 !important;
+  overflow-y: auto;
+ }
 
 .borderbottom {
     border-bottom: Solid 1px gray;
