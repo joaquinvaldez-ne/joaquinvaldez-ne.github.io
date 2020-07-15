@@ -497,7 +497,7 @@ div.sticky {
 }
 
 .ip {
-    margin-top: 142px;
+    margin-top: 200px;
 }
 
 #testimonialimg {
@@ -521,7 +521,9 @@ div.sticky {
     background-color: #daf2fa;
 }
 
-
+.filter {
+    background-color: #e9ecef;
+}
 
 
 
@@ -658,7 +660,9 @@ section.product-details .price .current {
 
 
 
-
+/* ---------------------------------------------------------------------- */
+/*	Social Icons
+/* ---------------------------------------------------------------------- */
 
 
 footer {
@@ -672,6 +676,7 @@ footer h4 {
 	font-size: 1.8em;
 	font-weight: 200;
 	text-shadow: 1px 1px 1px #000000;
+    margin-top: 0px;
 }
 footer h1, footer h2, footer h3, footer h4, footer a {
 	color: #FFFFFF !important;
@@ -743,9 +748,11 @@ div.footer-copyright nav ul li:first-child {
 	padding-left: 0;
 }
 
+
 /* ---------------------------------------------------------------------- */
 /*	Social Icons
 /* ---------------------------------------------------------------------- */
+
 .social-icons ul {
 	float: left;
 	list-style: none;
@@ -1109,6 +1116,16 @@ a.cartlink { cursor: pointer; }
 /******************* Cart Modal *************************/
 /********************************************************/
 
+.modal-dialog {
+    margin-top: 0px;
+    left: 15%;
+    right: auto;
+    }
+
+.modal-open{
+  padding-right: 0 !important;
+  overflow-y: auto;
+ }
 
 .borderbottom {
     border-bottom: Solid 1px gray;

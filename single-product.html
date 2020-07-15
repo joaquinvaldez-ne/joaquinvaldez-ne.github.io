@@ -10,7 +10,7 @@
     <title>New Earth</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 
 
     <link rel='stylesheet' id='Lato-google-font-css' href='https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin&#038;ver=4.9.9' type='text/css' media='all' />
@@ -28,11 +28,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
 </head>
@@ -40,7 +40,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo-1.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo-1.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -59,8 +59,8 @@
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="#">Core Products</a>
-                            <a class="dropdown-item" href="#">All Products</a>
+                            <a class="dropdown-item" href="core-products.html">Core Products</a>
+                            <a class="dropdown-item" href="all-products.html">All Products</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -76,13 +76,9 @@
                         <a class="nav-link" href="#">Log In</a>
                     </li>
                     <li class="nav-item shopcart">
-                        <img src="img/shopping-cart.png" data-toggle="modal" data-target="#cartModal" onMouseOver="this.style.cursor='pointer'">
+                        <a href="#" id="cart" data-toggle="modal" data-target="#cartModal"><img src="img/shopping-cart.png"></a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 d-md-none">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </form>
             </div>
         </div>
     </nav>
@@ -100,161 +96,165 @@
             </div>
         </div>
     </div>
-    <div class="container-lg">
-        <div class="row">&nbsp;</div>
+    <div class="container">
         <div class="row ip">
             <div class="col-5">
-                <p><img src="img/Energize.jpg" class="img-fluid" alt="energize"></p>
                 <div class="row">
-            <div class="col-12">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div id="addtlProdImg" class="mx-auto">
-                            <a data-fancybox="gallery" href="img/additional-image1.jpg"><img src="img/additional-image1.jpg" class="img-fluid"></a>
-                        </div>
+                    <div class="col-md-12">
+                    <p><img src="img/Energize.png" class="img-fluid" alt="energize"></p>
                     </div>
-                    <div class="item">
-                        <div id="addtlProdImg" class="mx-auto">
-                            <a data-fancybox="gallery" href="img/additional-image2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image2.jpg" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div id="addtlProdImg" class="mx-auto">
-                            <a data-fancybox="gallery" href="img/additional-image3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image3.jpg" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div id="addtlProdImg" class="mx-auto">
-                            <a data-fancybox="gallery" href="img/additional-image4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image4.jpg" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div id="addtlProdImg" class="mx-auto">
-                            <a data-fancybox="gallery" href="img/additional-image5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image5.jpg" class="img-fluid"></a>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div id="addtlProdImg" class="mx-auto">
+                                    <a data-fancybox="gallery" href="img/additional-image1.jpg"><img src="img/additional-image1.jpg" class="img-fluid"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="addtlProdImg" class="mx-auto">
+                                    <a data-fancybox="gallery" href="img/additional-image2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image2.jpg" class="img-fluid"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="addtlProdImg" class="mx-auto">
+                                    <a data-fancybox="gallery" href="img/additional-image3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image3.jpg" class="img-fluid"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="addtlProdImg" class="mx-auto">
+                                    <a data-fancybox="gallery" href="img/additional-image4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image4.jpg" class="img-fluid"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="addtlProdImg" class="mx-auto">
+                                    <a data-fancybox="gallery" href="img/additional-image5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="img/additional-image5.jpg" class="img-fluid"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
             </div>
             <div class="col-7">
-                <span class="h1 text-primary">Energize</span><br>
-                <span class="h3 text-primary font-italic">Natual Cellular Energy</span>
-
-                    <div class="review d-flex pt-3">
-                        <ul class="rate list-inline">
-                            <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
-                            <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
-                        </ul> 
-                        <span class="text-muted px-3"> 157 reviews (<a href="#">Write a review</a>)</span>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="h1 text-primary">Energize</span><br>
+                        <span class="h3 text-primary font-italic">Natual Cellular Energy</span>
                     </div>
-                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card my-3 text-primary border border-primary" style="width: 16rem;">
-                                <div class="card-body">
-                                    <p><span class="h4 card-title text-primary">Subscribe & Save!</span></p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="review d-flex pt-3">
+                            <ul class="rate list-inline">
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star text-primary"></i></li>
+                            </ul>
+                            <span class="text-muted px-3"> 157 reviews (<a href="#">Write a review</a>)</span>
+                        </div>
+                        <p>
+                            <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card my-3 text-primary border border-primary" style="width: 16rem;">
+                                    <div class="card-body">
+                                        <p><span class="h4 card-title text-primary">Subscribe & Save!</span></p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card my-3 text-primary" style="width: 16rem;">
+                                    <div class="card-body">
+                                        <p><span class="h5 card-title text-secondary">One Time Purchase</span></p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card my-3 text-primary" style="width: 16rem;">
-                                <div class="card-body">
-                                    <p><span class="h5 card-title text-secondary">One Time Purchase</span></p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-lg-start">
+                                    <div class="mx-auto justify-content-center">
+                                        <div class="quantity d-flex">
+                                            <div class="dec-btn bg-primary border-primary text-white" onclick="disableButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_decrease'});">-</div>
+                                            <input type="text" id="qty" name="qty" value="0" class="quantity-no">
+                                            <div class="inc-btn bg-primary border-primary text-white" onclick="activateButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_increase'})">+</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12"> 
-                        <div class="d-flex justify-content-lg-start">
-                            <div class="mx-auto justify-content-center">
-                                <div class="quantity d-flex">
-                                    <div class="dec-btn bg-primary border-primary text-white" onclick="disableButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_decrease'});">-</div>
-                                    <input type="text" id="qty" name="qty" value="0" class="quantity-no">
-                                    <div class="inc-btn bg-primary border-primary text-white" onclick="activateButton(); ga('send', 'event', {eventCategory: 'button', eventAction: 'click', eventLabel: 'product_qty_increase'})">+</div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-            </div>
-       
-        <div class="row">
-            <div class="col-12 text-center">
-                <hr class="w-100"/>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12 my-3">
-                <img src="img/certs.png">
-            </div>
-        </div>
-        </div>
-</div>
-<div class="prodInfoBkgnd py-3">
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-6 py-3">
-                <p>
-                  <span class="h2"><a data-toggle="collapse" href="#MoreInfo" role="button" aria-expanded="true" aria-controls="MoreInfo">
-                    More Information +</a></span>
-                </p>
-                <div class="collapse my-3" id="MoreInfo">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-                
-                <p>
-                  <span class="h2"><a data-toggle="collapse" href="#WhatYouGet" role="button" aria-expanded="false" aria-controls="WhatYouGet">
-                    What You Get+</a></span>
-                </p>
-                <div class="collapse my-3" id="WhatYouGet">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-                
-                <p>
-                  <span class="h2"><a data-toggle="collapse" href="#Guarantee" role="button" aria-expanded="false" aria-controls="Guarantee">
-                    100% Guarantee +</a></span>
-                </p>
-                <div class="collapse my-3" id="Guarantee">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-                
-                <p>
-                  <span class="h2"><a data-toggle="collapse" href="#FAQs" role="button" aria-expanded="false" aria-controls="FAQs">
-                   FAQs +</a></span>
-                </p>
-                <div class="collapse my-3" id="FAQs">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                 </div>
             </div>
-            <div class="col-6 py-3">
-                <p>
-                  <span class="h2">What People Are Saying...</span>
-                </p>
-                <p>
-                    <i>I have been on the Essentials program since 1992.  I love the benefits, so I've kept on the program. I never really understood why this program was so helpful, but now with all they new information about the importance of the gut microbiome I am realizing why the Essentials program has been so effective.</i><br/>
-                    - Charles Leslie
-                </p>
-                <p>
-                    <i>I have depended on the core essential products in these packets for decades. It is the first product I purchase each month and the first thing I eat every morning. I have better health now in my 60s than I did in my 30s!</i><br/>
-                    - Barbara Swanson
-                </p>
-                <p>
-                    <i>Essentials daily packs are so easy to use and really works.  After adding Essentials into my daily routine, I have noticed a positive change in the quality of my skin, energy, and gut health!</i><br/>
-                    - Kelly S.
-                </p>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <img src="img/certs.png">
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="prodInfoBkgnd py-3">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6 py-3">
+                    <p>
+                        <span class="h2"><a data-toggle="collapse" href="#MoreInfo" role="button" aria-expanded="true" aria-controls="MoreInfo">
+                                More Information +</a></span>
+                    </p>
+                    <div class="collapse my-3" id="MoreInfo">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
 
+                    <p>
+                        <span class="h2"><a data-toggle="collapse" href="#WhatYouGet" role="button" aria-expanded="false" aria-controls="WhatYouGet">
+                                What You Get+</a></span>
+                    </p>
+                    <div class="collapse my-3" id="WhatYouGet">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+
+                    <p>
+                        <span class="h2"><a data-toggle="collapse" href="#Guarantee" role="button" aria-expanded="false" aria-controls="Guarantee">
+                                100% Guarantee +</a></span>
+                    </p>
+                    <div class="collapse my-3" id="Guarantee">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+
+                    <p>
+                        <span class="h2"><a data-toggle="collapse" href="#FAQs" role="button" aria-expanded="false" aria-controls="FAQs">
+                                FAQs +</a></span>
+                    </p>
+                    <div class="collapse my-3" id="FAQs">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+                <div class="col-6 py-3">
+                    <p>
+                        <span class="h2">What People Are Saying...</span>
+                    </p>
+                    <p>
+                        <i>I have been on the Essentials program since 1992. I love the benefits, so I've kept on the program. I never really understood why this program was so helpful, but now with all they new information about the importance of the gut microbiome I am realizing why the Essentials program has been so effective.</i><br />
+                        - Charles Leslie
+                    </p>
+                    <p>
+                        <i>I have depended on the core essential products in these packets for decades. It is the first product I purchase each month and the first thing I eat every morning. I have better health now in my 60s than I did in my 30s!</i><br />
+                        - Barbara Swanson
+                    </p>
+                    <p>
+                        <i>Essentials daily packs are so easy to use and really works. After adding Essentials into my daily routine, I have noticed a positive change in the quality of my skin, energy, and gut health!</i><br />
+                        - Kelly S.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-lg">
         <div class="row">
             <div class="col-6 py-3">
@@ -279,276 +279,197 @@
             </div>
         </div>
     </div>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="newsletter">
+                    <h4>
+                        Important Links
+                    </h4>
+                    <ul class="contact">
+                        <li><a href="#" class="text-muted">Privacy Policy</a></li>
+                        <li><a href="#" class="text-muted">Terms And Conditions</a></li>
+                        <li><a href="#" class="text-muted">Returns Policy</a></li>
+                        <li><a href="https://www.dsa.org/consumerprotection/code-of-ethics" target="_blank" class="text-muted">DSA Code Of Ethics</a></li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="https://www.dsa.org/" target="_blank"> <img src="img/DSA-logo.png" alt="DSA" class="img img-responsive" /></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="https://dsef.org/what-we-do/ethics-initiative/" target="_blank"> <img src="img/DSEF-logo.png" alt="DSEF" class="img img-responsive" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="contact-details">
+                    <p>
+                        <img src="img/ne_logo-horizontal-white.png" alt="New Earth" class="img img-responsive" />
+                    </p>
 
-        <footer id="footer">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="newsletter">
-							<h4>
-								Important Links
-							</h4>
-							<ul class="contact">
-								<li><a
-									href="/mainsite/2395738/privacy-policy/"
-									class="text-muted">Privacy Policy</a></li>
-								<li><a
-									href="/mainsite/2395738/terms-and-conditions/"
-									class="text-muted">Terms And Conditions</a></li>
-								<li><a
-									href="/mainsite/2395738/returns-policy/"
-									class="text-muted">Returns Policy</a></li>
-								<li><a
-									href="https://www.dsa.org/consumerprotection/code-of-ethics"
-									target="_blank" class="text-muted">DSA Code Of Ethics</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3">
-								<p>
-									<a href="https://www.dsa.org/" target="_blank"> <img
-										src="img/DSA-logo.png" alt="DSA"
-										class="img img-responsive" />
-									</a> &nbsp; <a
-										href="https://dsef.org/what-we-do/ethics-initiative/"
-										target="_blank"> <img
-										src="img/DSEF-logo.png" alt="DSEF"
-										class="img img-responsive" />
-									</a>
-								</p>
-								<ul class="contact">
-									<li>
-										<p class="text-gray">
-											<i class="fa fa-map-marker"></i><strong>Address:</strong>
-											P.O. Box 609, Klamath Falls, Oregon 97601
-										</p>
-									</li>
-									<li>
-										<p class="text-gray">
-											<i class="fa fa-phone"></i><strong>Phone:</strong>
-											+1-800-800-1300
-										</p>
-									</li>
-									<li>
-										<p class="text-gray">
-											<i class="fa fa-envelope"></i> <a
-												href="mailto:support@newearthsupport.com" class="text-gray">
-												<strong>Email Us</strong>
-											</a>
-										</p>
-									</li>
-								</ul>
-					</div>
-					<div class="col-md-4">
-						<div class="contact-details">
-							<p>
-								<img
-									src="img/ne_logo-horizontal-white.png"
-									alt="New Earth" class="img img-responsive" />
-							</p>
-							
-								
-									<ul class="contact">
-										<li>
-											<p class="text-gray">
-												<i class="fa fa-map-marker"></i><strong>Address:</strong>
-												P.O. Box 609, Klamath Falls, Oregon 97601
-											</p>
-										</li>
-										<li>
-											<p class="text-gray">
-												<i class="fa fa-phone"></i><strong>Phone:</strong>
-												+1-800-800-1300
-											</p>
-										</li>
-										<li>
-											<p class="text-gray">
-												<i class="fa fa-envelope"></i> <a
-													href="mailto:support@newearthsupport.com" class="text-gray">
-													<strong>Email Us</strong>
-												</a>
-											</p>
-										</li>
-									</ul>
-						</div>
-					</div>
-					<div class="col-md-2">
-						
-							
-								<h4>
-									Follow Us
-								</h4>
-								<div class="social-icons">
 
-									<ul>
-										<li class="social-twitter tooltips"
-											data-original-title="Twitter" data-placement="bottom"><a
-											target="_blank" href="https://twitter.com/NewEarthCo">
-												Twitter </a></li>
-										<li class="social-facebook tooltips"
-											data-original-title="Facebook" data-placement="bottom">
-											<a target="_blank" href="https://www.facebook.com/NewEarthCo">
-												Facebook </a>
-										</li>
-										<li class="social-instagram tooltips"
-											data-original-title="Instagram" data-placement="bottom">
-											<a target="_blank"
-											href="https://www.instagram.com/newearthco/"> Instagram </a>
-										</li>
-										<li class="social-pinterest tooltips"
-											data-original-title="Pinterest" data-placement="bottom">
-											<a target="_blank"
-											href="https://www.pinterest.com/newearthco"> Pinterest </a>
-										</li>
-										<li class="social-google tooltips"
-											data-original-title="Google" data-placement="bottom"><a
-											target="_blank"
-											href="https://plus.google.com/u/0/+NewEarthCompany">
-												Google+ </a></li>
-									</ul>
-								</div>
-								<div class="social-icons">
-									<ul>
-										<li class="social-linkedin tooltips"
-											data-original-title="LinkedIn" data-placement="bottom">
-											<a target="_blank"
-											href="https://www.linkedin.com/in/newearthco"> LinkedIn </a>
-										</li>
-										<li class="social-youtube tooltips"
-											data-original-title="YouTube" data-placement="bottom"><a
-											target="_blank"
-											href="https://www.youtube.com/user/NewEarthCo"> YouTube </a>
-										</li>
-										<li class="social-rss tooltips" data-original-title="RSS"
-											data-placement="bottom"><a target="_blank"
-											href="https://blog.newearth.com"> RSS </a></li>
-									</ul>
-							
-							
-							
-							
-						
-					</div>
-				</div>
-			</div>
+                    <ul class="contact">
+                        <li>
+                            <p class="text-gray">
+                                <i class="fa fa-map-marker"></i><strong>Address:</strong>
+                                P.O. Box 609, Klamath Falls, Oregon 97601
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-gray">
+                                <i class="fa fa-phone"></i><strong>Phone:</strong>
+                                +1-800-800-1300
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-gray">
+                                <i class="fa fa-envelope"></i> <a href="mailto:support@newearthsupport.com" class="text-gray">
+                                    <strong>Email Us</strong>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4>
+                    Follow Us
+                </h4>
+                <div class="social-icons">
+                    <ul>
+                        <li class="social-twitter tooltips" data-original-title="Twitter" data-placement="bottom"><a target="_blank" href="https://twitter.com/NewEarthCo">
+                                Twitter </a></li>
+                        <li class="social-facebook tooltips" data-original-title="Facebook" data-placement="bottom">
+                            <a target="_blank" href="https://www.facebook.com/NewEarthCo">
+                                Facebook </a>
+                        </li>
+                        <li class="social-instagram tooltips" data-original-title="Instagram" data-placement="bottom">
+                            <a target="_blank" href="https://www.instagram.com/newearthco/"> Instagram </a>
+                        </li>
+                        <li class="social-pinterest tooltips" data-original-title="Pinterest" data-placement="bottom">
+                            <a target="_blank" href="https://www.pinterest.com/newearthco"> Pinterest </a>
+                        </li>
+                        <li class="social-google tooltips" data-original-title="Google" data-placement="bottom"><a target="_blank" href="https://plus.google.com/u/0/+NewEarthCompany">
+                                Google+ </a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li class="social-linkedin tooltips" data-original-title="LinkedIn" data-placement="bottom">
+                            <a target="_blank" href="https://www.linkedin.com/in/newearthco"> LinkedIn </a>
+                        </li>
+                        <li class="social-youtube tooltips" data-original-title="YouTube" data-placement="bottom"><a target="_blank" href="https://www.youtube.com/user/NewEarthCo"> YouTube </a>
+                        </li>
+                        <li class="social-rss tooltips" data-original-title="RSS" data-placement="bottom"><a target="_blank" href="https://blog.newearth.com"> RSS </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; New Earth Life Sciences. All Right Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-			<div class="footer-copyright">
-
-					<div class="row">
-						<div class="col-md-1 text-white">
-							
-							NEW&nbsp;EARTH
-							
-						</div>
-						<div class="col-md-7">
-							<p>&copy; New Earth Life Sciences. All Right Reserved
-								en_us  Q+</p>
-						</div>
-						<div class="col-md-4">
-							<nav id="sub-menu">
-								
-							</nav>
-						</div>
-					</div>
-
-			</div>
-		</footer>
-
-        <!-- Modal -->
-        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+    <!-- Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-body">
-                <div class="row pb-3">
-                    <div class="col-md-6">
-                        <a href="#">Your Cart</a>
+                <div class="modal-body">
+                    <div class="row pb-3">
+                        <div class="col-md-6">
+                            <a href="#">Your Cart</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-dismiss="modal">Continue Shopping</a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <a href="#" data-dismiss="modal">Continue Shopping</a>
+                    <div class="row">
+                        <div class="col-md-12 borderbottom">
+                            AUTOSHIP
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 borderbottom">
-                        AUTOSHIP
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 py-3 borderbottom">
-                        <img src="img/Energize.jpg" class="img-fluid cartThumb" alt="energize">
-                    </div>
-                    <div class="col-md-8 py-3 borderbottom">
-                        <span class="text-primary">Energize</span>
-                        <div class="row">
-                            <div class="col-md-8">
-                                Amount:
-                            </div>
-                            <div class="col-md-4">
-                                <strong>$50.00</strong>
+                    <div class="row">
+                        <div class="col-md-4 py-3 borderbottom">
+                            <img src="img/Energize.jpg" class="img-fluid cartThumb" alt="energize">
+                        </div>
+                        <div class="col-md-8 py-3 borderbottom">
+                            <span class="text-primary">Energize</span>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    Amount:
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>$50.00</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>  
-                <div class="row">
-                    <div class="col-md-4 py-3 borderbottom"></div>
-                        <div class="col-md-8 py-3 borderbottom">
+                    <div class="row">
+                        <div class="col-md-4 py-3"></div>
+                        <div class="col-md-8 py-3">
                             <div class="row">
                                 <div class="col-md-8">
                                     Subtotal:
                                 </div>
-                            <div class="col-md-4">
-                                <strong>$50.00</strong>
-                            </div>
+                                <div class="col-md-4">
+                                    <strong>$50.00</strong>
+                                </div>
                             </div>
                         </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 pt-3 text-right">
-                        <a href="#">GO TO CHECKOUT</a>
                     </div>
-                </div>  
-              </div>
+                    <div class="row">
+                        <div class="col-md-12 pt-3 text-right">
+                            <a href="#">GO TO CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- Modal -->
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </div>
+    <!-- Modal -->
 
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-        <!-- vendors -->
-        <script src="assets/vendors/jquery.mousewheel.min.js"></script>
-        <script src="assets/owlcarousel/owl.carousel.js"></script>
-        <script src="assets/vendors/highlight.js"></script>
-        <script src="assets/js/app.js"></script>
-        <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-        <script>
-            $(document).ready(function() {
-                $('#myModal').on('shown.bs.modal', function () {
-                  $('#myInput').trigger('focus')
-                })
-                
-                var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    items: 3,
-                    rtl: false,
-                    margin: 10,
-                    nav: true,
-                    loop: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        }
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- vendors -->
+    <script src="assets/vendors/jquery.mousewheel.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 3,
+                rtl: false,
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
                     }
-                })
-            });
-        </script>
-    
+                }
+            })
+        });
+    </script>
+
 </body>
 
 </html>
