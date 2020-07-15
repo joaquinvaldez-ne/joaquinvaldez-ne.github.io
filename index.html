@@ -33,7 +33,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo-1.png"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo-1.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,8 +68,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Log In</a>
                     </li>
-                    <li class="nav-item shopcart cartlink">
-                        <img src="img/shopping-cart.png">
+                    <li class="nav-item shopcart">
+                        <img src="img/shopping-cart.png" data-toggle="modal" data-target="#cartModal" onMouseOver="this.style.cursor='pointer'">
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 d-md-none">
@@ -377,7 +377,7 @@
 						</div>
 						<div class="col-md-7">
 							<p>&copy; New Earth Life Sciences. All Right Reserved
-								en_us  Q+</p>
+				            </p>
 						</div>
 						<div class="col-md-4">
 							<nav id="sub-menu">
@@ -388,6 +388,64 @@
 
 			</div>
 		</footer>
+    
+        <!-- Modal -->
+            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="row pb-3">
+                        <div class="col-md-6">
+                            <a href="#">Your Cart</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" data-dismiss="modal">Continue Shopping</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 borderbottom">
+                            AUTOSHIP
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 py-3 borderbottom">
+                            <img src="img/Energize.jpg" class="img-fluid cartThumb" alt="energize">
+                        </div>
+                        <div class="col-md-8 py-3 borderbottom">
+                            <span class="text-primary">Energize</span>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    Amount:
+                                </div>
+                                <div class="col-md-4">
+                                    <strong>$50.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-4 py-3 borderbottom"></div>
+                            <div class="col-md-8 py-3 borderbottom">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        Subtotal:
+                                    </div>
+                                <div class="col-md-4">
+                                    <strong>$50.00</strong>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pt-3 text-right">
+                            <a href="#">GO TO CHECKOUT</a>
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
 
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
