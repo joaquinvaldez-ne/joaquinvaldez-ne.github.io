@@ -163,17 +163,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card my-3 text-primary border border-primary">
+                        <div id="sns" class="card my-3 text-primary border border-primary" onClick="updateCardFormat('sns');">
                             <div class="card-body">
-                                <p><span class="h4 card-title text-primary">Subscribe & Save!</span></p>
+                                <p><span id="snsTitle" class="h4 card-title text-primary">Subscribe & Save!</span></p>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card my-3 text-primary">
+                        <div id="otp" class="card my-3 text-primary" onClick="updateCardFormat('otp');">
                             <div class="card-body">
-                                <p><span class="h5 card-title text-secondary">One Time Purchase</span></p>
+                                <p><span id="otpTitle" class="h5 card-title text-secondary">One Time Purchase</span></p>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
@@ -464,6 +464,41 @@
                 }
             })
         });
+        
+        function updateCardFormat(idName) {
+
+            if (idName === 'sns') {
+                $('#otp').removeClass('text-primary');
+                $('#otp').removeClass('border-primary');
+                $('#otpTitle').removeClass('text-primary');
+
+                $('#otpTitle').addClass('text-secondary');
+                $('#otpTitle').removeClass('h4');
+                $('#otpTitle').addClass('h5');
+
+                $('#sns').addClass('text-primary');
+                $('#sns').addClass('border-primary');
+                $('#snsTitle').removeClass('text-secondary');
+                $('#snsTitle').removeClass('h5');
+                $('#snsTitle').addClass('text-primary');               
+                $('#snsTitle').addClass('h4');               
+            } else {
+                $('#sns').removeClass('text-primary');
+                $('#sns').removeClass('border-primary');
+                $('#snsTitle').removeClass('text-primary');
+                
+                $('#snsTitle').addClass('text-secondary');
+                $('#snsTitle').removeClass('h4');
+                $('#snsTitle').addClass('h5');
+
+                $('#otp').addClass('text-primary');
+                $('#otp').addClass('border-primary');
+                $('#otpTitle').removeClass('text-secondary');
+                $('#otpTitle').removeClass('h5');
+                $('#otpTitle').addClass('text-primary');               
+                $('#otpTitle').addClass('h4');               
+            }
+        }
 
     </script>
 </body>
