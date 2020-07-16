@@ -450,6 +450,7 @@
                 rtl: false,
                 margin: 10,
                 nav: true,
+                navText: ["<i class='fa fa-arrow-left text-muted fa-2x'></i>","<i class='fa fa-arrow-right text-muted fa-2x'></i>"],
                 loop: true,
                 responsive: {
                     0: {
@@ -460,8 +461,26 @@
                     }
                 }
             })
+
+            $('.dec-btn').click(function() {
+                var siblings = $(this).siblings('input.quantity-no');
+                if (parseInt(siblings.val(), 10) >= 1) {
+                    siblings.val(parseInt(siblings.val(), 10) - 1);
+                    if (siblings.val() < 1) {
+                        //disableButton();
+                    } else {
+                        //activateButton();
+                    }
+                }
+            });
+
+            $('.inc-btn').click(function() {
+                var siblings = $(this).siblings('input.quantity-no');
+                siblings.val(parseInt(siblings.val(), 10) + 1);
+            });
+
         });
-        
+
         function updateCardFormat(idName) {
 
             if (idName === 'sns') {
@@ -477,13 +496,13 @@
                 $('#sns').addClass('border-primary');
                 $('#snsTitle').removeClass('text-secondary');
                 $('#snsTitle').removeClass('h5');
-                $('#snsTitle').addClass('text-primary');               
-                $('#snsTitle').addClass('h4');               
+                $('#snsTitle').addClass('text-primary');
+                $('#snsTitle').addClass('h4');
             } else {
                 $('#sns').removeClass('text-primary');
                 $('#sns').removeClass('border-primary');
                 $('#snsTitle').removeClass('text-primary');
-                
+
                 $('#snsTitle').addClass('text-secondary');
                 $('#snsTitle').removeClass('h4');
                 $('#snsTitle').addClass('h5');
@@ -492,8 +511,8 @@
                 $('#otp').addClass('border-primary');
                 $('#otpTitle').removeClass('text-secondary');
                 $('#otpTitle').removeClass('h5');
-                $('#otpTitle').addClass('text-primary');               
-                $('#otpTitle').addClass('h4');               
+                $('#otpTitle').addClass('text-primary');
+                $('#otpTitle').addClass('h4');
             }
         }
 
