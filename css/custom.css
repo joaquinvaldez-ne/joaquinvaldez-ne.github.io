@@ -139,7 +139,7 @@ ul {
 
 
 .nav-item {
-    padding-left: 40px;
+    padding-left: 25px;
 }
 
 .shopcart {
@@ -147,10 +147,15 @@ ul {
     height: auto;
 }
 
+.shopcart2 {
+    height: 30px;
+    width: auto;
+}
+
 div.sticky {
   position: -webkit-sticky; /* Safari */
   position: fixed;
-  padding-top: 20px;    
+  padding: 20px 0 20px 0;    
   top: 70px;
   width: 100%;
   z-index: 999;
