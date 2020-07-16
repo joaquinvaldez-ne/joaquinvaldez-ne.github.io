@@ -97,11 +97,42 @@ ul {
 	top: 3px;
 }
 
-/* ---------------------------------------------------------------------- */
-/*      GHANA CUSTOM CSS
- /* ---------------------------------------------------------------------- */
+.quantity .inc-btn,
+.quantity .dec-btn {
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+.quantity .inc-btn,
+.quantity .dec-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  border: 1px solid #999;
+  text-align: center;
+  cursor: pointer;
+}
 
+.quantity input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  line-height: 30px;
+  outline: none;
+}
+.quantity .inc-btn {
+    margin-left: 10px;
+}
+.quantity .dec-btn {
+    margin-right: 10px;
+}
 
 
 
@@ -468,7 +499,7 @@ hr {
 }
 
 .shopcart {
-    width: 40px;
+    width: 35px;
     height: auto;
 }
 
