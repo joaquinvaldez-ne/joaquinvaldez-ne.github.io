@@ -323,14 +323,6 @@ section.product-details .price .current {
 
 
 
-
-
-
-
-
-
-
-
 /* ---------------------------------------------------------------------- */
 /*	Social Icons
 /* ---------------------------------------------------------------------- */
@@ -787,10 +779,14 @@ a.cartlink { cursor: pointer; }
 /******************* Cart Modal *************************/
 /********************************************************/
 
+/*.modal-dialog {
+    height: 200px;
+    width: 350px;
+}*/
+
 .modal-dialog {
     margin-top: 0px;
-    left: 15%;
-    right: auto;
+    margin-right: 0;
     }
 
 .modal-open{
