@@ -206,7 +206,22 @@ div.sticky {
     background-color: #e9ecef;
 }
 
+.productTestimonial {
+    height:350px;
+    overflow-y: scroll;
+}
 
+.faq {
+    padding-top: 10px;
+}
+
+.h2 .fa {
+  transition: .3s transform ease-in-out;
+}
+
+.h2 .collapsed .fa {
+  transform: rotate(90deg);
+}
 
 
 
