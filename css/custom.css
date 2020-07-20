@@ -8,6 +8,77 @@ and open the template in the editor.
     Author     : stevenbaker
 */
 
+@media (max-width: 1112px) { 
+    #logo { 
+        width: 250px;
+    }
+     div.sticky {
+        top: 60px!important; 
+        left: 0px;
+    }
+    #carouselExampleControls {
+        padding-top: 0px;
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 1024px) { 
+    #logo { 
+        width: 250px;
+    }
+}
+
+@media (max-width: 414px) { 
+    #logo { 
+        width: 250px;
+    }
+    div.sticky {
+        border: 0px solid blue; 
+        top: 50px!important; 
+        left: 0px;
+        
+
+    }
+    #carouselExampleControls {
+        padding-top: 0px;
+        margin-top: 120px;
+    }
+}
+   
+@media (max-width: 375px) { 
+    #logo { 
+        width: 225px;
+    }
+    div.sticky {
+        border: 0px solid blue; 
+        top: 50px!important; 
+        left: 0px;
+        
+
+    }
+    #carouselExampleControls {
+        padding-top: 0px;
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 320px) { 
+    #logo { 
+        width: 200px; 
+    } 
+    div.sticky {
+        border: 0px solid #000;
+        top: 57px!important;
+        left: 0px!important;
+        padding-left: 0px!important;
+        
+    }
+    #carouselExampleControls {
+        padding-top: 0px;
+        margin-top: 135px;
+
+    }
+}
 h1, h2, h3, h4, h5, h6 {font-family: "Lato"; }
 body, input, textarea, select, .greennature-content-font{ font-family: "Lato"; }
 body, p { font-size: 16px; color: #333; }
@@ -161,6 +232,11 @@ div.sticky {
   z-index: 999;
   background-color: #e9ecef;
 }
+
+/*#carouselExampleControls {
+        padding-top: 0px;
+        margin-top: 130px;
+}*/
 
 .jumbotron {
   padding: 1rem 0rem;
