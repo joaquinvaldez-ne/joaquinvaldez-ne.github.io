@@ -205,9 +205,13 @@ ul {
     margin-right: 10px;
 }
 
-
-
-
+nav.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: fixed;  
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
 
 .nav-item {
     padding-left: 25px;
