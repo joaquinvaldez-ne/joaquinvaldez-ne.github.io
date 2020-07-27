@@ -309,12 +309,12 @@ div.sticky {
         margin-top: 130px;
 }*/
 
-.jumbotron {
+/*.jumbotron {
     padding: 1rem 0rem;
     margin-bottom: 0rem;
     background-color: #e9ecef;
     border-radius: 0rem;
-}
+}*/
 .item {
     width: 100%;
 }
@@ -322,7 +322,7 @@ div.sticky {
     margin-top: 142px;
 }
 .ip {
-    margin-top: 200px;
+    margin-top: 190px;
 }
 #testimonialimg {
     width: 200px;
@@ -358,6 +358,9 @@ div.sticky {
     transform: rotate(90deg);
 }
 
+hr {
+    border: 1px solid #cccccc;
+}
 /*********************/
 
 
