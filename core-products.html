@@ -373,6 +373,16 @@
 
     <script>
         $(document).ready(function() {
+            
+            $(function() {
+                  $('[data-toggle="modal"]').hover(function() {
+                    var modalId = $(this).data('target');
+                    $(modalId).modal('show');
+
+                  });
+
+                });
+            
             var owl = $('.owl-carousel');
             owl.owlCarousel({
                 items: 3,
